@@ -49,19 +49,19 @@ o	One-hot encoding for categorical variables (e.g., make and model).
 
 3. Visualizations
 •	Price Distributions:
-o	Prices are right-skewed, indicating most vehicles are in the lower price range.
+	Prices are right-skewed, indicating most vehicles are in the lower price range.
 •	Correlations:
-o	Strong positive correlation between year (or vehicle age) and price.
-o	Mileage negatively correlates with price, indicating depreciation with usage.
-•	Density curves and histograms:
-o	Highlight variability in prices across vehicle types, the prices show extreme skewness to the right and many high outliers.
+-	Strong positive correlation between year (or vehicle age) and price.
+-	Mileage negatively correlates with price, indicating depreciation with usage.
+-	Density curves and histograms:
+-	Highlight variability in prices across vehicle types, the prices show extreme skewness to the right and many high outliers.
 
 5. Modeling
 •	Models Used:
 o	Linear Regression, Quadratic Regression, Ridge Regression, and Lasso Regression.
 •	Best Model: Lasso regression with polynomial features (degree 2) and strong L1 regularization (alpha=100).
 •	Hyperparameter Tuning:
-o	Used GridSearchCV with cross-validation to optimize model parameters.
+-	Used GridSearchCV with cross-validation to optimize model parameters.
 
 Interpretation of the GridSearchCV Output:
 •	The best model is a quadratic regression with interactions and Lasso regularization.
@@ -70,9 +70,13 @@ Interpretation of the GridSearchCV Output:
 •	The best model has degree=2 with interaction terms
 
 •	Model and Evaluation
-•	Model:
-o	A Ridge regression model was selected for its robustness to multicollinearity and scalability.
-o	Hyperparameter tuning using GridSearchCV improved model performance.
+-	A Ridge regression model was selected for its robustness to multicollinearity and scalability.
+-	Hyperparameter tuning using GridSearchCV improved model performance.
+*Best Model:*
+The winner is Model 3: Lasso Model with Degree 2 Polynomial.
+Lasso Model with Degree 2 Polynomial provides the best fit with $R^2$=69.5\% and $RMSE=6891$.
+
+
 
 •	Metrics:
 o	Root Mean Squared Error (RMSE): Measures prediction error; lower is better.
