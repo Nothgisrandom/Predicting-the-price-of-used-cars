@@ -17,7 +17,7 @@ The primary goal of this project is to address the following questions:
 o	What are the key factors influencing vehicle prices?
 o	How do missing values and data inconsistencies affect the dataset?
 
-3.	Prediction Goals:\
+3.	Prediction Goals:
 o	Develop a reliable model to predict vehicle prices based on relevant features.
 o	Provide actionable insights for pricing strategies and market analysis.
 
@@ -29,7 +29,8 @@ The analysis follows the CRISP-DM methodology:
 4.	Modeling: Use multiple regression models and hyperparameter tuning to predict prices.
 5.	Evaluation: Assess model performance using metrics such as R² and RMSE.
 6.	Deployment: Provide insights and recommendations to aid dealership decision-making.
-Link to Python Notebook:\
+   
+**Link to Python Notebook:**
 https://github.com/Nothgisrandom/Predicting-the-price-of-used-cars/blob/main/Practical%20Application%202%20AHasan%20Updated.ipynb 
 
 
@@ -58,14 +59,14 @@ o	One-hot encoding for categorical variables (e.g., make and model).
 •	Correlations:\
 -	Strong positive correlation between year (or vehicle age) and price.
 -	Mileage negatively correlates with price, indicating depreciation with usage.\
--	
+  
 -	Density curves and histograms:\
 -	Highlight variability in prices across vehicle types; the prices show extreme skewness to the right and many high outliers.
 
 5. **Modeling**
-•	Models Used:\
+•	**Models Used:**\
 o	Linear Regression, Quadratic Regression, Ridge Regression, and Lasso Regression.
-•	Best Model:\
+•	**Best Model:**\
  Lasso regression with polynomial features (degree 2) and strong L1 regularization (alpha=100).
 •	Hyperparameter Tuning:\
 -	Used GridSearchCV with cross-validation to optimize model parameters.
@@ -100,20 +101,23 @@ o	Engine size and make/model contribute significantly to price predictions.
 •	Eliminated Redundant Features:
 o	Lasso regularization dropped features with negligible contributions.
 
-6.**Recommendations**
-•	For Inventory Management:\
+6. **Recommendations**
+•	**For Inventory Management:**
+
 - Focus on acquiring newer vehicles with lower mileage, as consumers value these more.
 -	Highlight features like engine size and specific makes/models in marketing campaigns.
-•	For Pricing Strategies:
-  - Use the predictive model to price vehicles based on mileage, age, and other vital attributes.
-  -   Adjust pricing strategies based on region-specific demand and feature preferences.
+  
+•	**For Pricing Strategies:**
+  -  Use the predictive model to price vehicles based on mileage, age, and other vital attributes.
+  -  Adjust pricing strategies based on region-specific demand and feature preferences.
   -	The “best” fitted model provides a reliable mechanism for predicting vehicle prices.
   -	Understanding mileage, vehicle age, and categorical attributes can guide pricing decisions.
   -	Cleaning and encoding categorical features significantly enhanced model accuracy.
 
 ## Characteristics of Cars Priced in the Top 10th Percentile: 
 
-My models focused on cars below the 90th percentile for the price. Cars in the top 10th percentile tier based on descriptive statistics have the following attributes (1178 cars): \
+My models focused on cars below the 90th percentile for the price. Cars in the top 10th percentile tier based on descriptive statistics have the following attributes (1178 cars): 
+
 **Region:** The most frequent was Seattle-Tacoma\
 **Price:** Range from 68,000- 200,142 dollars.\
 **Year:** varied from 1932 to 2021.0, with a median of 2019.\
