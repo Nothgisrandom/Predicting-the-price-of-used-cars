@@ -109,18 +109,19 @@ o	Lasso regularization dropped features with negligible contributions.
   -	Understanding mileage, vehicle age, and categorical attributes can guide pricing decisions.
   -	Cleaning and encoding categorical features significantly enhanced model accuracy.
 
-**Note: **	
+## Characteristics of Cars Priced in the top 10th Percentile: 
+
 My models focused on cars below the 90th percentile for the price. Cars in the top 10th percentile tier based on descriptive statistics have the following attributes (1178 cars): 
-region: The most frequent was Seattle-Tacoma
-price: Range from 68,000- 200,142 dollars.
-Year: varied from 1932 to 2021.0, with a median of 2019.
-Manufacturer: Ford accounted for 352 of the 1178 cars, making it the most popular manufacturer. The Corvette manufactures accounted for 41 of the 1178 cars, making it the most popular model.
-Condition: excellent accounted for 231 of the 1178 cars
-Cylinders: 8 cylinders accounted for 426
-Fuel: Diesel accounted for 532
-Odometer: Ranged from 0 (brand new cars) to 640,626 with a mean of roughly 26,000.
-The State of California has the most expensive cars, and diesel is the most popular fuel among those.
-A mileage of around 26,000 is the median mileage for the top 10% valuable cars.
+**region:** The most frequent was Seattle-Tacoma\
+**price:** Range from 68,000- 200,142 dollars.\
+**Year:** varied from 1932 to 2021.0, with a median of 2019.\
+**Manufacturer:** Ford accounted for 352 of the 1178 cars, making it the most popular manufacturer. The Corvette manufactures accounted for 41 of the 1178 cars, making it the most popular model.\
+**Condition:** excellent accounted for 231 of the 1178 cars\
+**Cylinders:** 8 cylinders accounted for 426\
+**Fuel:** Diesel accounted for 532\
+**Odometer:** Ranged from 0 (brand new cars) to 640,626 with a mean of roughly 26,000.\
+**The State of California** has the most expensive cars, and diesel is the most popular fuel among those.\
+**A mileage of around 26,000** is the median mileage for the top 10% of valuable cars.\
  
 
 
