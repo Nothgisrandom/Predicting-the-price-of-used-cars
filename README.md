@@ -29,6 +29,7 @@ The analysis follows the CRISP-DM methodology:
 6.	Deployment: Provide insights and recommendations to aid dealership decision-making.
 Python Notebook \url{https://github.com/Nothgisrandom/Predicting-the-price-of-used-cars/blob/main/Practical%20Application%202%20AHasan%20Updated.ipynb}
 
+
 ###  Key Insights
 1. Data Understanding
 •	Dataset: 426K cars with features such as price, mileage, year, make, model, engine size, and more.
