@@ -4,6 +4,7 @@
 
 This project explores the factors driving the price of used cars using a dataset of 426,000 records sourced from Kaggle. 
 The goal is to identify critical attributes influencing car prices and provide actionable recommendations for used car dealerships to optimize their inventory and pricing strategies. 
+
 **Data Sources**
 The dataset (vehicles.csv) includes information about vehicles, such as:
 •	Categorical features: Vehicle types, make, model, and VIN.
@@ -16,7 +17,7 @@ The primary goal of this project is to address the following questions:
 o	What are the key factors influencing vehicle prices?
 o	How do missing values and data inconsistencies affect the dataset?
 
-3.	Prediction Goals:
+3.	Prediction Goals:\
 o	Develop a reliable model to predict vehicle prices based on relevant features.
 o	Provide actionable insights for pricing strategies and market analysis.
 
@@ -28,11 +29,12 @@ The analysis follows the CRISP-DM methodology:
 4.	Modeling: Use multiple regression models and hyperparameter tuning to predict prices.
 5.	Evaluation: Assess model performance using metrics such as R² and RMSE.
 6.	Deployment: Provide insights and recommendations to aid dealership decision-making.
-Link to Python Notebook:
+Link to Python Notebook:\
 https://github.com/Nothgisrandom/Predicting-the-price-of-used-cars/blob/main/Practical%20Application%202%20AHasan%20Updated.ipynb 
 
 
 ###  Key Insights
+
 1.**Data Understanding**
 •	Dataset: 426K cars with features such as price, mileage, year, make, model, engine size, and more.
 •	Observations:
@@ -59,10 +61,11 @@ o	One-hot encoding for categorical variables (e.g., make and model).
 -	Highlight variability in prices across vehicle types, the prices show extreme skewness to the right and many high outliers.
 
 5. **Modeling**
-•	Models Used:
+•	Models Used:\
 o	Linear Regression, Quadratic Regression, Ridge Regression, and Lasso Regression.
-•	Best Model: Lasso regression with polynomial features (degree 2) and strong L1 regularization (alpha=100).
-•	Hyperparameter Tuning:
+•	Best Model:
+ Lasso regression with polynomial features (degree 2) and strong L1 regularization (alpha=100).
+•	Hyperparameter Tuning:\
 -	Used GridSearchCV with cross-validation to optimize model parameters.
 
 **Interpretation of the GridSearchCV Output:**
@@ -70,11 +73,11 @@ o	Linear Regression, Quadratic Regression, Ridge Regression, and Lasso Regressio
 •	The data likely follows a near-linear trend, and higher-degree polynomial terms did not improve performance.
 •	Strong regularization (alpha=100) implies the dataset might have noisy features or multicollinearity.
 •	The best model has degree=2 with interaction terms
-
-•	**Model and Evaluation**
 -	A Ridge regression model was selected for its robustness to multicollinearity and scalability.
 -	Hyperparameter tuning using GridSearchCV improved model performance.
-*Best Model:*
+-	$RMSE$ , $R^2$, and $MAE$ were used to rank the models. 
+  
+**Best Model:**
 The winner is Model 3: Lasso Model with Degree 2 Polynomial.
 Lasso Model with Degree 2 Polynomial provides the best fit with $R^2$=69.5\% and $RMSE=6891$.
 
