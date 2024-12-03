@@ -28,14 +28,15 @@ The analysis follows the CRISP-DM methodology:\
 5.	Evaluation: Assess model performance using metrics such as R² and RMSE.\
 6.	Deployment: Provide insights and recommendations to aid dealership decision-making.\
 Python Notebook https://github.com/Nothgisrandom/AIML/blob/What-drives-the-price-of-a-car/Practical%20Application%202%20AHasan%20Updated.ipynb
-\
+
+
 **Key Insights:**
 1. **Data Understanding**
 •	Dataset: 426K cars with features such as price, mileage, year, make, model, engine size, and more.\
 •	Observations:
 o	High variability in car prices, with some extreme outliers.\
 o	Mileage and year strongly correlate with price.\
-o	Several features have missing or redundant data.\
+o	Several features have missing or redundant data.
 
 2. **Data Cleaning and Preparation**
 •	Removed duplicate entries based on unique identifiers.\
@@ -44,7 +45,7 @@ o	Imputed missing mileage and engine size with median values.\
 •	Engineered new features:\
 o	An indicator for old or vintage cars. \
 o	One-hot encoding for categorical variables (e.g., make and model).\
-•	Final dataset prepared with standardized numerical features for modeling.\
+•	Final dataset prepared with standardized numerical features for modeling.
 
 3. **Visualizations**
 •	Price Distributions:\
@@ -53,7 +54,7 @@ o	Prices are right-skewed, indicating most vehicles are in the lower price range
 o	Strong positive correlation between year (or vehicle age) and price.\
 o	Mileage negatively correlates with price, indicating depreciation with usage.\
 •	Density curves and histograms:\
-o	Highlight variability in prices across vehicle types, the prices show extreme skewness to the right and many high outliers. \
+o	Highlight variability in prices across vehicle types, the prices show extreme skewness to the right and many high outliers. 
 
 5. **Modeling**
 •	Models Used:
@@ -65,12 +66,12 @@ o	Used GridSearchCV with cross-validation to optimize model parameters.\
 •	The best model is a quadratic regression with interactions and Lasso regularization.\
 •	The data likely follows a near-linear trend, and higher-degree polynomial terms did not improve performance.\
 •	Strong regularization (alpha=100) implies the dataset might have noisy features or multicollinearity.\
-•	The best model has degree=2 with interaction terms\
+•	The best model has degree=2 with interaction terms
 
 •	**Model and Evaluation**
 •	**Models:**
 o	A Ridge regression model was selected for its robustness to multicollinearity and scalability.\
-o	Hyperparameter tuning using GridSearchCV improved model performance.\
+o	Hyperparameter tuning using GridSearchCV improved model performance.
 
 •	**Metrics:**
 o	Root Mean Squared Error (RMSE): Measures prediction error; lower is better.\
@@ -78,7 +79,7 @@ o	Mean Absolute Error (MAE): Represents average prediction deviation from actual
 o	R² Score: Indicates the proportion of variance explained by the model.\
 •	Results: The best model is lasso regression with degree=2.\
 o	RMSE: $7,000\
-o	R² Score: ~0.70 (indicating that the model explains 85% of price variability).\
+o	R² Score: ~0.70 (indicating that the model explains 85% of price variability).
 
 5. **Findings:**
 •	Key Drivers of Price:\
@@ -91,24 +92,24 @@ o	Lasso regularization dropped features with negligible contributions.\
 6. **Recommendations:**
 •	**For Inventory Management:**\
 o	Focus on acquiring newer vehicles with lower mileage, as consumers value these more.\
-o	Highlight features like engine size and specific makes/models in marketing campaigns.\
+o	Highlight features like engine size and specific makes/models in marketing campaigns.
 
 •	**For Pricing Strategies:**\
 o	Use the predictive model to price vehicles based on mileage, age, and other vital attributes.\
 o	Adjust pricing strategies based on region-specific demand and feature preferences.\
 o	The “best” fitted model provides a reliable mechanism for predicting vehicle prices.\
 o	Understanding mileage, vehicle age, and categorical attributes can guide pricing decisions.\
-o	Cleaning and encoding categorical features significantly enhanced model accuracy.\
+o	Cleaning and encoding categorical features significantly enhanced model accuracy.
 
 •	My models focused on cars below the 90th percentile for the price. Cars in the top 10th percentile tier based on descriptive statistics have the following attributes: 
-region: The most frequent was Seattle-Tacoma
-price: Range from 68,000- 200,142 dollars.
-Year: varied from 1932 to 2021.0, with a median of 2019.
-Manufacturer: Ford accounted for 352 of the 1178 cars, making it the most popular manufacturer. The Corvette manufactures accounted for 41 of the 1178 cars, making it the most popular model.
-Condition: excellent accounted for 231 of the 1178 cars
-Cylinders: 8 cylinders accounted for 426
-Fuel: diesel accounted for 532
-Odometer: Ranged from 0 (brand new cars) to 640,626 with a mean of roughly 26,000.
+**region:** The most frequent was Seattle-Tacoma
+**price:** Range from 68,000- 200,142 dollars.
+**Year:** varied from 1932 to 2021.0, with a median of 2019.
+**Manufacturer:** Ford accounted for 352 of the 1178 cars, making it the most popular manufacturer. The Corvette manufactures accounted for 41 of the 1178 cars, making it the most popular model.
+**Condition:** excellent accounted for 231 of the 1178 cars
+**Cylinders:** 8 cylinders accounted for 426
+**Fuel:** diesel accounted for 532
+**Odometer:** Ranged from 0 (brand new cars) to 640,626 with a mean of roughly 26,000.
 The State of California has the most expensive cars, and diesel is the most popular fuel among those.
 A mileage of around 26,000 is the median mileage for the top 10% valuable cars.
  
