@@ -15,11 +15,11 @@ The dataset (vehicles.csv) includes information about vehicles, such as:
 ### Business Problem
 
 The primary goal of this project is to address the following questions:
-1.	Analysis Goals:
+1.	**Analysis Goals:**
 - What are the key factors influencing vehicle prices?
 - How do missing values and data inconsistencies affect the dataset?
 
-3.	Prediction Goals:
+3.	**Prediction Goals:**
 o	Develop a reliable model to predict vehicle prices based on relevant features.
 o	Provide actionable insights for pricing strategies and market analysis.
 
@@ -38,7 +38,7 @@ https://github.com/Nothgisrandom/Predicting-the-price-of-used-cars/blob/main/Pra
 
 ###  Key Insights
 
-1.**Data Understanding**
+1. **Data Understanding**
 -	Dataset: 426K cars with features such as price, mileage, year, make, model, engine size, and more.
 -	Observations:
 -	High variability in car prices, with some extreme outliers.
@@ -47,23 +47,23 @@ https://github.com/Nothgisrandom/Predicting-the-price-of-used-cars/blob/main/Pra
 
 2. **Data Cleaning and Preparation**
    
-•	Removed duplicate entries based on unique identifiers.
-•	Handled missing values:
-o	Imputed missing mileage and engine size with median values.
-•	Engineered new features:
-o	An indicator for old or vintage cars. 
-o	One-hot encoding for categorical variables (e.g., make and model).
-•	Final dataset prepared with standardized numerical features for modeling.
+-	Removed duplicate entries based on unique identifiers.
+-	Handled missing values:
+-	Imputed missing mileage and engine size with median values.
+
+3.  **Engineered New Features:**
+-	An indicator for old or vintage cars. 
+-	One-hot encoding for categorical variables (e.g., make and model).
+-	Final dataset prepared with standardized numerical features for modeling.
 
 4. **Visualizations**
-•	**Price Distributions:**
-
-	Prices are right-skewed, indicating most vehicles are in the lower price range.
+-	**Price Distributions:**
+	Prices are right-skewed, indicating most vehicles are in the lower price range. There are too many outliers and noisy dataset overall.
   
 -	Density curves and histograms:\
 -	Highlight variability in prices across vehicle types; the prices show extreme skewness to the right and many high outliers.
 
-•	**Correlations & Scatter Plots:** 
+-	**Correlations & Scatter Plots:** 
 
 -	Strong positive correlation between year (or vehicle age) and price.
 -	Mileage negatively correlates with price, indicating depreciation with usage.
@@ -77,8 +77,8 @@ o	Linear Regression, Quadratic Regression, Ridge Regression, and Lasso Regressio
 •	**Best Model:**
 
  Lasso regression with polynomial features (degree 2) and strong L1 regularization (alpha=100).
+ 
 •	**Hyperparameter Tuning:**
-
 -	Used GridSearchCV with cross-validation to optimize model parameters.
 
 **Interpretation of the GridSearchCV Output:**
