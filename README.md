@@ -52,18 +52,20 @@ o	One-hot encoding for categorical variables (e.g., make and model).
 •	Final dataset prepared with standardized numerical features for modeling.
 
 3. **Visualizations**
-•	Price Distributions:
-	Prices are right-skewed, indicating most vehicles are in the lower price range.
-•	Correlations:
+•	Price Distributions:\
+	Prices are right-skewed, indicating most vehicles are in the lower price range.\
+
+•	Correlations:\
 -	Strong positive correlation between year (or vehicle age) and price.
--	Mileage negatively correlates with price, indicating depreciation with usage.
--	Density curves and histograms:
+-	Mileage negatively correlates with price, indicating depreciation with usage.\
+-	
+-	Density curves and histograms:\
 -	Highlight variability in prices across vehicle types; the prices show extreme skewness to the right and many high outliers.
 
 5. **Modeling**
 •	Models Used:\
 o	Linear Regression, Quadratic Regression, Ridge Regression, and Lasso Regression.
-•	Best Model:
+•	Best Model:\
  Lasso regression with polynomial features (degree 2) and strong L1 regularization (alpha=100).
 •	Hyperparameter Tuning:\
 -	Used GridSearchCV with cross-validation to optimize model parameters.
@@ -91,7 +93,7 @@ o	RMSE: $7,000
 o	R² Score: ~0.70 (indicating that the model explains 70% of price variability).
 
 5. **Findings**
-•	Key Drivers of Price:
+•	Key Drivers of Price:\
 o	Vehicle age (newer vehicles have higher prices).
 o	Mileage (lower mileage cars are priced higher).
 o	Engine size and make/model contribute significantly to price predictions.
@@ -99,7 +101,7 @@ o	Engine size and make/model contribute significantly to price predictions.
 o	Lasso regularization dropped features with negligible contributions.
 
 6.**Recommendations**
-•	For Inventory Management:
+•	For Inventory Management:\
 - Focus on acquiring newer vehicles with lower mileage, as consumers value these more.
 -	Highlight features like engine size and specific makes/models in marketing campaigns.
 •	For Pricing Strategies:
