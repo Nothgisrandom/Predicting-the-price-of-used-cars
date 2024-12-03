@@ -27,7 +27,7 @@ The analysis follows the CRISP-DM methodology:
 4.	Modeling: Use multiple regression models and hyperparameter tuning to predict prices.
 5.	Evaluation: Assess model performance using metrics such as R² and RMSE.
 6.	Deployment: Provide insights and recommendations to aid dealership decision-making.
-Python Notebook \url{ https://github.com/Nothgisrandom/AIML/blob/What-drives-the-price-of-a-car/Practical%20Application%202%20AHasan%20Updated.ipynb}
+Python Notebook \url{https://github.com/Nothgisrandom/Predicting-the-price-of-used-cars/blob/main/Practical%20Application%202%20AHasan%20Updated.ipynb}
 
 ###  Key Insights
 1. Data Understanding
