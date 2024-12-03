@@ -58,7 +58,7 @@ o	One-hot encoding for categorical variables (e.g., make and model).
 -	Strong positive correlation between year (or vehicle age) and price.
 -	Mileage negatively correlates with price, indicating depreciation with usage.
 -	Density curves and histograms:
--	Highlight variability in prices across vehicle types, the prices show extreme skewness to the right and many high outliers.
+-	Highlight variability in prices across vehicle types; the prices show extreme skewness to the right and many high outliers.
 
 5. **Modeling**
 •	Models Used:\
@@ -109,14 +109,14 @@ o	Lasso regularization dropped features with negligible contributions.
   -	Understanding mileage, vehicle age, and categorical attributes can guide pricing decisions.
   -	Cleaning and encoding categorical features significantly enhanced model accuracy.
 
-## Characteristics of Cars Priced in the top 10th Percentile: 
+## Characteristics of Cars Priced in the Top 10th Percentile: 
 
-My models focused on cars below the 90th percentile for the price. Cars in the top 10th percentile tier based on descriptive statistics have the following attributes (1178 cars): 
-**region:** The most frequent was Seattle-Tacoma\
-**price:** Range from 68,000- 200,142 dollars.\
+My models focused on cars below the 90th percentile for the price. Cars in the top 10th percentile tier based on descriptive statistics have the following attributes (1178 cars): \
+**Region:** The most frequent was Seattle-Tacoma\
+**Price:** Range from 68,000- 200,142 dollars.\
 **Year:** varied from 1932 to 2021.0, with a median of 2019.\
 **Manufacturer:** Ford accounted for 352 of the 1178 cars, making it the most popular manufacturer. The Corvette manufactures accounted for 41 of the 1178 cars, making it the most popular model.\
-**Condition:** excellent accounted for 231 of the 1178 cars\
+**Condition:** Excellent accounted for 231 of the 1178 cars\
 **Cylinders:** 8 cylinders accounted for 426\
 **Fuel:** Diesel accounted for 532\
 **Odometer:** Ranged from 0 (brand new cars) to 640,626 with a mean of roughly 26,000.\
